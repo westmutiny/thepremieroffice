@@ -1,17 +1,16 @@
 {
   "jsonrpc": "2.0",
   "id": {
-    "region": "Napa Valley",
-    "country": "United States",
-    "report_date": "2025-06-28"
+    "region": "Mendoza Region",
+    "country": "Argentina",
+    "report_date": "2025-07-24"
   },
-  "data": {
-    "delta_variability_pct": -3.0,
-    "top_driver": {
-      "factor": "Temperature",
-      "share_pct": 19.0
+  "Climate Variability from Previous Month": {
+    "delta_variability_pct": 4.20,
+    "difference_indicator": "increase"
+    "primary_driver": {
+      "parameter": "Longwave Solar Radiation",
+      "share_pct": 10.96
     },
-    "entropy_bits": 2.85,
-    "note": "Stabilized temperatures reduced variability."
   }
 }
