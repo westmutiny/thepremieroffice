@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/mcp/manifest"
+  to = "/.netlify/functions/mcp?manifest=1"
+  status = 200
+
+[[redirects]]
+  from = "/mcp/rpc"
+  to = "/.netlify/functions/mcp"
+  status = 200

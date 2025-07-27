@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "id": {
+    "region": "Napa Valley",
+    "country": "United States",
+    "report_date": "2025-06-28"
+  },
+  "data": {
+    "delta_variability_pct": -3.0,
+    "top_driver": {
+      "factor": "Temperature",
+      "share_pct": 19.0
+    },
+    "entropy_bits": 2.85,
+    "note": "Stabilized temperatures reduced variability."
+  }
+}

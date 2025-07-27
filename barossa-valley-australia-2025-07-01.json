@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "id": {
+    "region": "Barossa Valley",
+    "country": "Australia",
+    "report_date": "2025-07-01"
+  },
+  "data": {
+    "delta_variability_pct": 7.0,
+    "top_driver": {
+      "factor": "Shortwave Radiation",
+      "share_pct": 22.0
+    },
+    "entropy_bits": 3.1,
+    "note": "Solar radiation variability increased mid\u2011month."
+  }
+}

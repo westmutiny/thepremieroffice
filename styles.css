@@ -1,0 +1,25 @@
+:root { --ivory:#FFFFF0; --black:#000; }
+*{ box-sizing:border-box; }
+html,body{ background:var(--ivory); color:var(--black); margin:0; padding:0; }
+.no-emphasis em, .no-emphasis strong { font-style: normal; font-weight: normal; }
+
+.header{ font-family:'Cinzel',serif; text-align:center; padding:24px 16px 0; }
+.header h1{ margin:0; display:flex; align-items:baseline; justify-content:center; gap:8px; white-space:nowrap; }
+.title-part-office{ font-size:28px; } /* ~21pt */
+.title-part-of{ font-size:21px; }      /* ~16pt */
+.title-part-wine{ font-size:40px; }    /* ~30pt */
+.byline{ margin-top:6px; font-size:12pt; }
+
+.rulebar{ margin-top:16px; height:48px; width:100%; background:#000; position:relative; }
+.rulebar .logo{ position:absolute; right:25px; top:7px; height:34px; line-height:34px; font-size:34px; color:var(--ivory); }
+
+.nav{ text-align:center; margin-top:12px; font-family:'Chivo Mono',monospace; font-size:16px; }
+.nav a{ color:#000; text-decoration:none; }
+.nav a + a{ margin-left:16px; }
+
+.feed-wrap{ display:flex; justify-content:center; padding:24px 16px 56px; }
+.feed{ width:400px; height:200px; overflow:auto; border:1px solid #000; background:transparent; font-family:'Chivo Mono',monospace; font-size:19px; line-height:1.4; padding:8px 12px; }
+.post + .post{ border-top:3px solid #000; margin-top:8px; padding-top:8px; }
+.post .line{ white-space:pre-wrap; }
+
+.page{ font-family:'Chivo Mono',monospace; font-size:21px; line-height:1.6; max-width:72ch; margin:40px auto; padding:0 16px 56px; }

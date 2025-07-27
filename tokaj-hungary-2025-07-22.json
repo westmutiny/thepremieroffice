@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "id": {
+    "region": "Tokaj",
+    "country": "Hungary",
+    "report_date": "2025-07-22"
+  },
+  "data": {
+    "delta_variability_pct": 12.0,
+    "top_driver": {
+      "factor": "Relative Humidity",
+      "share_pct": 18.0
+    },
+    "entropy_bits": 3.42,
+    "note": "Humidity swings clustered in week 3."
+  }
+}

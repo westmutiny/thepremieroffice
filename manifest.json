@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "weather-entropy-feed",
+  "name": "The Premier Office Of Wine & Weather",
+  "description": "JSON-RPC endpoints to search content atoms (weather entropy) by location, recency, or definitions.",
+  "endpoints": {
+    "rpc": "/mcp/rpc"
+  },
+  "methods": [
+    {
+      "name": "search_by_location",
+      "description": "Return atoms filtered by region and/or country (case-insensitive).",
+      "params": {
+        "type": "object",
+        "properties": {
+          "region": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "search_most_recent",
+      "description": "Return the three most recent atoms by id.report_date.",
+      "params": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "search_definitions",
+      "description": "Return definitions of computational methods used.",
+      "params": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}

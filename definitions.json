@@ -1,0 +1,11 @@
+{
+  "jsonrpc": "2.0",
+  "id": "definitions-1",
+  "result": {
+    "definitions": {
+      "climate_variability": "Information entropy (bits) computed over selected weather variables for a wine-growing region; higher values indicate greater variability.",
+      "primary_driver": "Variable with maximal individual entropy contribution within the ensemble; reported with share percentage of total entropy.",
+      "month_to_month_change": "Difference between current month's climate variability total and prior month, with up/down trend."
+    }
+  }
+}
