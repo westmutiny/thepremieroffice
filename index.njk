@@ -1,0 +1,35 @@
+---
+layout: base.njk
+title: The Premier Office Of Wine & Weather
+---
+<div class="header no-emphasis">
+  <h1>
+    <span class="title-part-office">The Premier Office</span>
+    <span class="title-part-of">Of</span>
+    <span class="title-part-wine">Wine & Weather</span>
+  </h1>
+  <div class="byline">Ian Carleton, Publisher</div>
+  <div class="nav">
+    <a href="/">Home</a>
+    <a href="/the-premier-method/">The Premier Method</a>
+    <a href="/premier-wine-harvest-report-preview/">Premier Wine Harvest Report Preview</a>
+  </div>
+  <div class="rulebar">
+    <div class="logo">🌐🌐🌐</div>
+  </div>
+</div>
+
+<div class="feed-wrap">
+  <div class="feed">
+    {% for atom in collections.atoms %}
+      <article class="post">
+        <div class="line">{{ atom.id.region }}, {{ atom.id.country }} — {{ atom.id.report_date }}</div>
+        <div class="line">Climate variability {{ atom.data.delta_variability_pct }}% vs last month</div>
+        <div class="line">Primary driver: {{ atom.data.top_driver.factor }} ({{ atom.data.top_driver.share_pct }}% share)</div>
+        {% if atom.data.entropy_bits %}<div class="line">Entropy total: {{ atom.data.entropy_bits }} bits</div>{% endif %}
+        {% if atom.data.trend %}<div class="line">Trend: {{ atom.data.trend }}</div>{% endif %}
+        {% if atom.data.note %}<div class="line">Note: {{ atom.data.note }}</div>{% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</div>
