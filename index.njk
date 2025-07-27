@@ -15,7 +15,7 @@ title: The Premier Office Of Wine & Weather
     <a href="/premier-wine-harvest-report-preview/">Premier Wine Harvest Report Preview</a>
   </div>
   <div class="rulebar">
-    <div class="logo">🌐🌐🌐</div>
+    <div class="logo">▲🌐▼</div>
   </div>
 </div>
 
@@ -25,9 +25,7 @@ title: The Premier Office Of Wine & Weather
       <article class="post">
         <div class="line">{{ atom.id.region }}, {{ atom.id.country }} — {{ atom.id.report_date }}</div>
         <div class="line">Climate variability {{ atom.data.delta_variability_pct }}% vs last month</div>
-        <div class="line">Primary driver: {{ atom.data.top_driver.factor }} ({{ atom.data.top_driver.share_pct }}% share)</div>
-        {% if atom.data.entropy_bits %}<div class="line">Entropy total: {{ atom.data.entropy_bits }} bits</div>{% endif %}
-        {% if atom.data.trend %}<div class="line">Trend: {{ atom.data.trend }}</div>{% endif %}
+        <div class="line">Primary driver: {{ atom.data.primary_driver.parameter }} ({{ atom.data.primary_driver.share_pct }}% share)</div>
         {% if atom.data.note %}<div class="line">Note: {{ atom.data.note }}</div>{% endif %}
       </article>
     {% endfor %}
