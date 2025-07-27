@@ -1,17 +1,16 @@
 {
   "jsonrpc": "2.0",
   "id": {
-    "region": "Tokaj",
-    "country": "Hungary",
-    "report_date": "2025-07-22"
+    "region": "Western Australia Region",
+    "country": "Australia",
+    "report_date": "2025-07-25"
   },
-  "data": {
-    "delta_variability_pct": 12.0,
-    "top_driver": {
-      "factor": "Relative Humidity",
-      "share_pct": 18.0
+  "Climate Variability from Previous Month": {
+    "delta_variability_pct": 0.78,
+    "difference_indicator": "increase"
+    "primary_driver": {
+      "parameter": "Longwave Solar Radiation",
+      "share_pct": 11.27
     },
-    "entropy_bits": 3.42,
-    "note": "Humidity swings clustered in week 3."
   }
 }
